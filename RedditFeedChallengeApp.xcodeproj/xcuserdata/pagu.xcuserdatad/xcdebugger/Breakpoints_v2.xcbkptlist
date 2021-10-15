@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9BAB2FF4-7670-4293-9245-8627E8C3D531"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67BAC272-6FD9-4497-B9CB-6193CB42D4C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditFeedChallangeApp/FeedView/PostView/FeedListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "subscribe()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CA56D67-2254-4B27-B797-92DBB52A349A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditFeedChallangeApp/FeedView/PostView/FeedListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "subscribe()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0F78716-56C6-484E-A463-63644419F8EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RedditFeedChallengeAppTests/FeedLoaderTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "testLoadingSeveralPages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E0F78716-56C6-484E-A463-63644419F8EE - 54a46d4e282214c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;RedditFeedChallengeApp.FeedPostData&gt;) -&gt; () in RedditFeedChallengeAppTests.FeedLoaderTests.testLoadingSeveralPages() -&gt; ()"
+                  moduleName = "RedditFeedChallengeAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pagu/Work/Projects/RedditFeedChallangeApp/RedditFeedChallengeAppTests/FeedLoaderTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "E0F78716-56C6-484E-A463-63644419F8EE - 54a46d4e282214c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;RedditFeedChallengeApp.FeedPostData&gt;) -&gt; () in RedditFeedChallengeAppTests.FeedLoaderTests.testLoadingSeveralPages() -&gt; ()"
+                  moduleName = "RedditFeedChallengeAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pagu/Work/Projects/RedditFeedChallangeApp/RedditFeedChallengeAppTests/FeedLoaderTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "320">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
