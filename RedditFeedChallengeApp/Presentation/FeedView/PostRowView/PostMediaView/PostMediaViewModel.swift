@@ -11,6 +11,7 @@ enum PostMediaViewType {
     case text
     case image
     case video
+    case gallery
 }
 
 protocol IPostMediaViewModel {
@@ -22,7 +23,10 @@ protocol IPostMediaViewModel {
 final class PostMediaViewModel: IPostMediaViewModel {
     
     var mediaType: PostMediaViewType {
-        post.is_video ? .video : (post.thumbnail_height == nil ? .text : .image)
+        if post.is_gallery ?? false {
+            return .gallery
+        }
+        return post.is_video ? .video : (post.thumbnail_height == nil ? .text : .image)
     }
     
     var url: URL? {
@@ -34,7 +38,10 @@ final class PostMediaViewModel: IPostMediaViewModel {
     }
     
     private var urlString: String? {
-        post.is_video ? post.media?.reddit_video?.fallback_url : post.url
+        if post.is_gallery ?? false {
+            return post.thumbnail
+        }
+        return post.is_video ? post.media?.reddit_video?.fallback_url : post.url
     }
     
     private var post: FeedPostData

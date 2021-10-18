@@ -34,7 +34,7 @@ struct PostMediaView: View {
             EmptyView()
         case .video:
             PostVideoConfigurator.configurePostVideoView(with: mediaUrl)
-        case .image:
+        case .image, .gallery:
             PostImageConfigurator.configurePostImageView(with: mediaUrl)
         }
     }

@@ -20,6 +20,7 @@ struct FeedPostData: Codable, Hashable {
     var id: String?
     var is_video: Bool
     var media: FeedPostMedia?
+    var is_gallery: Bool?
 }
 
-let fakePost = FeedPostData(title: "Test Titla", hidden: false, hide_score: false, thumbnail_width: 200, thumbnail_height: 100, score: 50, thumbnail: "", num_comments: 1000, url: "", id: "id", is_video: false)
+let fakePost = FeedPostData(title: "Test Titla", hidden: false, hide_score: false, thumbnail_width: 200, thumbnail_height: 100, score: 50, thumbnail: "", num_comments: 1000, url: "", id: "id", is_video: false, is_gallery: false)
