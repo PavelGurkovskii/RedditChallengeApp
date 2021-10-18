@@ -41,7 +41,10 @@ final class PostMediaViewModel: IPostMediaViewModel {
         if post.is_gallery ?? false {
             return post.thumbnail
         }
-        return post.is_video ? post.media?.reddit_video?.fallback_url : post.url
+        if post.is_video {
+            return post.media?.reddit_video?.fallback_url
+        }
+        return  post.url?.containsImage ?? false ? post.url : post.thumbnail
     }
     
     private var post: FeedPostData

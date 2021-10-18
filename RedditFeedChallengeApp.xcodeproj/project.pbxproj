@@ -50,6 +50,7 @@
 		1D920A0D271996FB00A4DF78 /* FeedDataInvalid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D920A0C271996FB00A4DF78 /* FeedDataInvalid.txt */; };
 		1D920A0E271996FB00A4DF78 /* FeedDataInvalid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D920A0C271996FB00A4DF78 /* FeedDataInvalid.txt */; };
 		1D920A102719990500A4DF78 /* FeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D920A0F2719990500A4DF78 /* FeedLoaderTests.swift */; };
+		1DA9549F271D73E400292CCB /* URLMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9549E271D73E400292CCB /* URLMimeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		1D920A082719824300A4DF78 /* FeedDataValid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FeedDataValid.txt; sourceTree = "<group>"; };
 		1D920A0C271996FB00A4DF78 /* FeedDataInvalid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FeedDataInvalid.txt; sourceTree = "<group>"; };
 		1D920A0F2719990500A4DF78 /* FeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderTests.swift; sourceTree = "<group>"; };
+		1DA9549E271D73E400292CCB /* URLMimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMimeType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			children = (
 				1D9209C32714792A00A4DF78 /* FeedLoader.swift */,
 				1D920A0027196C6300A4DF78 /* Endpoint.swift */,
+				1DA9549E271D73E400292CCB /* URLMimeType.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				1D9209812714246F00A4DF78 /* RedditFeedChallangeAppApp.swift in Sources */,
 				1D9209D92715AA8500A4DF78 /* PostImageViewModel.swift in Sources */,
 				1D9209CA271570F300A4DF78 /* FeedListViewModel.swift in Sources */,
+				1DA9549F271D73E400292CCB /* URLMimeType.swift in Sources */,
 				1D9209B1271435EE00A4DF78 /* ScoreNumberView.swift in Sources */,
 				1D9209B6271438D300A4DF78 /* CommentsNumberViewModel.swift in Sources */,
 				1D9209C42714792A00A4DF78 /* FeedLoader.swift in Sources */,
