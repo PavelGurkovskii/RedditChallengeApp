@@ -29,8 +29,11 @@ class NetworkerTests: XCTestCase {
     }
 
     func testValidUrl() throws {
-        let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataValid", withExtension: "txt")
-        let result = networker.get(type: FeedResponse.self, url: url!)
+        guard let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataValid", withExtension: "txt") else {
+            fatalError()
+            return
+        }
+        let result = networker.get(type: FeedResponse.self, url: url)
         cancellables.removeAll()
         let promise = expectation(description: "Valid url")
         result.sink { completion in
@@ -49,8 +52,11 @@ class NetworkerTests: XCTestCase {
     }
     
     func testInvalidUrl() throws {
-        let url = URL(string: "https://www.reit.cm")
-        let result = networker.get(type: FeedResponse.self, url: url!)
+        guard let url = URL(string: "https://www.reit.cm") else {
+            fatalError()
+            return
+        }
+        let result = networker.get(type: FeedResponse.self, url: url)
         let promise = expectation(description: "Failure called")
         cancellables.removeAll()
         result.sink { completion in
@@ -68,8 +74,11 @@ class NetworkerTests: XCTestCase {
     }
     
     func testInvalidFormat() throws {
-        let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataInvalid", withExtension: "txt")
-        let result = networker.get(type: FeedResponse.self, url: url!)
+        guard let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataInvalid", withExtension: "txt") else {
+            fatalError()
+            return
+        }
+        let result = networker.get(type: FeedResponse.self, url: url)
         cancellables.removeAll()
         let promise = expectation(description: "Failure called")
         result.sink { completion in
@@ -88,8 +97,11 @@ class NetworkerTests: XCTestCase {
     }
     
     func testValidFormat() throws {
-        let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataValid", withExtension: "txt")
-        let result = networker.get(type: FeedResponse.self, url: url!)
+        guard let url = Bundle(for: NetworkerTests.self).url(forResource: "FeedDataValid", withExtension: "txt") else {
+            fatalError()
+            return
+        }
+        let result = networker.get(type: FeedResponse.self, url: url)
         cancellables.removeAll()
         let promise = expectation(description: "Data parsed successfuly")
         result.sink { completion in
